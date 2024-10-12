@@ -1,0 +1,147 @@
+.header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @extend %action-link;
+  color: $color-text-dark;
+}
+
+.header__right {
+  display: flex;
+  flex-grow: 2;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.header__right--active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  left: 0;
+  top: 100px;
+  background-color: $color-background-body;
+  @extend %action-burger;
+}
+
+.header__navigation {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
+  }
+
+  li {
+    cursor: pointer;
+    border-bottom: 2px solid $color-text-light;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+.header__btn {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  border-bottom: 2px solid $color-text-light;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 384px;
+    background-color: $color-background-body;
+  }
+
+  @media screen and (max-width: 380px) {
+    margin-bottom: 184px;
+  }
+
+  img {
+    @media screen and (max-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (hover: hover) {
+  .header__btn:hover {
+    border-bottom: 2px solid $color-text-dark;
+  }
+
+  .navigation li:hover {
+    border-bottom: 2px solid $color-text-dark;
+  }
+}
+
+.burger {
+  cursor: pointer;
+  display: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 100px;
+  border: 2px solid $color-border-dark;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
+}
+
+.burger::before,
+.burger::after {
+  content: '';
+  height: 1.5px;
+  width: 16px;
+  background-color: $color-text-dark;
+  position: absolute;
+}
+
+.burger::before {
+  top: 18px;
+  left: 14px;
+}
+
+.burger::after {
+  bottom: 18px;
+  left: 14px;
+}
+
+.burger--active::before {
+  transform: rotate(45deg) translate(2px, 2px);
+}
+
+.burger--active::after {
+  transform: rotate(-45deg) translate(2px, -2px);
+}

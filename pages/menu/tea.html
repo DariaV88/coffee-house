@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tea</title>
+    <link rel="stylesheet" href="../../scss/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__wrapper">
+          <a href="../../index.html" class="logo"><img src="../../assets/logo.png" alt="Logo" /></a>
+          <div class="header__right">
+            <nav class="header__navigation">
+              <ul class="navigation">
+                <li><a href="../../index.html#favorite">Favorite coffee</a></li>
+                <li><a href="../../index.html#gallery">About</a></li>
+                <li><a href="../../index.html#app">Mobile app</a></li>
+                <li><a href="#footer">Contact us</a></li>
+              </ul>
+            </nav>
+            <div class="header__btn disabled">
+              <a href="../menu/coffee.html">Menu</a>
+              <img src="../../assets/coffee-cup.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="burger"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="menu__textblock">
+          <div class="menu__title">
+            <p>Behind each of our cups</p>
+            <p>hides an <span>amazing surprise</span></p>
+          </div>
+          <div class="menu__controls">
+            <a href="./coffee.html" class="button button-passive">
+              <span class="button__imgblock">
+                <img src="../../assets/coffee-min.svg" alt=""
+              /></span>
+              <span class="button__text">Coffee</span>
+            </a>
+            <a class="button button-inactive">
+              <span class="button__imgblock"> <img src="../../assets/tea-min.svg" alt="" /></span>
+              <span class="button__text">Tea</span>
+            </a>
+            <a href="./dessert.html" class="button button-passive">
+              <span class="button__imgblock">
+                <img src="../../assets/dessert-min.svg" alt=""
+              /></span>
+              <span class="button__text">Dessert</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu__itemsblock">
+          <div class="item">
+            <div class="imgblock" style="background-image: url(../../assets/tea/tea-1.png)"></div>
+
+            <div class="item__textblock">
+              <p class="item__title">Moroccan</p>
+              <p class="item__text">
+                Fragrant black tea with the addition of tangerine, cinnamon, honey, lemon and mint
+              </p>
+              <p class="item__price">$4.50</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="imgblock" style="background-image: url(../../assets/tea/tea-2.png)"></div>
+
+            <div class="item__textblock">
+              <p class="item__title">Ginger</p>
+              <p class="item__text">Original black tea with fresh ginger, lemon and honey</p>
+              <p class="item__price">$5.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="imgblock" style="background-image: url(../../assets/tea/tea-3.png)"></div>
+
+            <div class="item__textblock">
+              <p class="item__title">Cranberry</p>
+              <p class="item__text">Invigorating black tea with cranberry and honey</p>
+              <p class="item__price">$5.00</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="imgblock" style="background-image: url(../../assets/tea/tea-4.png)"></div>
+            <div class="item__textblock">
+              <p class="item__title">Sea buckthorn</p>
+              <p class="item__text">
+                Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon
+              </p>
+              <p class="item__price">$5.50</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="wrapper footer__wrapper">
+        <div class="footer__textbloock">
+          <p class="footer__title">Sip, Savor, Smile. <span>It’s coffee time!</span></p>
+          <div class="footer__icons">
+            <span class="footer__icon"
+              ><svg
+                width="24"
+                height="20"
+                viewBox="0 0 24 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="icon-path"
+                  d="M23 1.01006C23 1.01006 20.9821 2.20217 19.86 2.54006C19.2577 1.84757 18.4573 1.35675 17.567 1.13398C16.6767 0.911216 15.7395 0.967251 14.8821 1.29451C14.0247 1.62177 13.2884 2.20446 12.773 2.96377C12.2575 3.72309 11.9877 4.62239 12 5.54006V6.54006C10.2426 6.58562 8.50127 6.19587 6.93101 5.4055C5.36074 4.61513 4.01032 3.44869 3 2.01006C3 2.01006 -1 11.0101 8 15.0101C5.94053 16.408 3.48716 17.109 1 17.0101C10 22.0101 21 17.0101 21 5.51006C20.9991 5.23151 20.9723 4.95365 20.92 4.68006C21.9406 3.67355 23 1.01006 23 1.01006Z"
+                  stroke="#E1D4C9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span class="footer__icon"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="icon-path"
+                  d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                  stroke="#E1D4C9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  class="icon-path"
+                  d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                  stroke="#E1D4C9"
+                />
+                <path
+                  class="icon-path"
+                  d="M17.5 6.51L17.51 6.49889"
+                  stroke="#E1D4C9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span class="footer__icon"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="icon-path"
+                  d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
+                  stroke="#E1D4C9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <p>Contact us</p>
+          <ul>
+            <li>
+              <img src="../../assets/pin-alt.svg" alt="" /><a
+                href="https://maps.app.goo.gl/xA2F5Nv8iZWyPW5S9"
+                >8558 Green Rd., LA</a
+              >
+            </li>
+            <li>
+              <img src="../../assets/phone.svg" alt="" />+1 (603) 555-0123<a
+                href="tel:+1(603)555-0123"
+              ></a>
+            </li>
+            <li>
+              <img src="../../assets/clock.svg" alt="" /><a href="">Mon-Sat: 9:00 AM – 23:00 PM</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="../../script.js"></script>
+  </body>
+</html>
