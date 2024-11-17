@@ -1,0 +1,15 @@
+@import './normalize';
+@import './colors';
+@import './fonts';
+@import './base';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './pages/home/about';
+@import './pages/home/favorite';
+@import './pages/home/gallery';
+@import './pages/home/app';
+
+@import './pages/menu/text';
+@import './pages/menu/items';

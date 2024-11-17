@@ -1,0 +1,22 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  transition: all 5s ease-in-out;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: $color-background-body;
+}
+
+.wrapper {
+  max-width: 1440px;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 550px) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

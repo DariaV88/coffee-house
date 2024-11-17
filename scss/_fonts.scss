@@ -1,0 +1,62 @@
+%heading-1 {
+  font-family: Inter;
+  font-size: 7.2rem;
+  font-weight: 600;
+  line-height: 105%;
+
+  @media screen and (max-width: 700px) {
+    font-size: 6.2rem;
+    line-height: 115%;
+  }
+
+  @media screen and (max-width: 575px) {
+    font-size: 4.2rem;
+    line-height: 115%;
+  }
+}
+
+%heading-2 {
+  font-family: Inter;
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 125%;
+
+  @media screen and (max-width: 600px) {
+    font-size: 3.2rem;
+  }
+}
+
+%heading-3 {
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+%body-medium {
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+%body-caption {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+%action-link {
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+%action-burger {
+  font-family: Inter;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 125%;
+}

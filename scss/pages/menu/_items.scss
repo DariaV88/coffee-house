@@ -1,0 +1,108 @@
+.menu__itemsblock {
+  // display: grid;
+  // grid-template-columns: repeat(4, 1fr);
+  // grid-auto-flow: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.item {
+  cursor: pointer;
+  border-radius: 40px;
+  border: 1px solid $color-border-light;
+  height: 506px;
+  width: 310px;
+  position: relative;
+
+  .imgblock {
+    width: 310px;
+    height: 310px;
+    display: block;
+    overflow: hidden;
+    background-position: center;
+    border-radius: 40px;
+  }
+}
+
+.item:hover {
+  .imgblock {
+    background-size: 310px 310px;
+  }
+}
+
+.item__textblock {
+  margin: 20px;
+}
+
+.item__title {
+  @extend %heading-3;
+  color: $color-text-dark;
+  margin-bottom: 12px;
+}
+
+.item__text {
+  @extend %body-medium;
+  color: $color-text-dark;
+  margin-bottom: 12px;
+}
+
+.item__price {
+  @extend %heading-3;
+  color: $color-text-dark;
+  position: absolute;
+  bottom: 20px;
+}
+
+.menu__itemsblock {
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0px;
+  }
+}
+
+#coffee-5,
+#coffee-6,
+#coffee-7,
+#coffee-8 {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.refresh {
+  display: none;
+  margin-bottom: 100px;
+  margin-top: 40px;
+
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
+}
+
+.refresh__button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid $color-border-dark;
+  border-radius: 100px;
+  background-color: inherit;
+}
+
+@media (hover: hover) {
+  .refresh__button:hover {
+    background-color: $color-background-body;
+
+    .icon-path {
+      stroke: $color-text-dark;
+    }
+  }
+}
